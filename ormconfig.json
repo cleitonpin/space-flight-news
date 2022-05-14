@@ -1,0 +1,15 @@
+{
+  "type": "postgres",
+  "port": 5432,
+  "host": "host.docker.internal",
+  "username": "postgres",
+  "password": "post",
+  "database": "coodesh",
+  "entities": ["src/modules/**/entities/*.ts"],
+  "migrations": ["./src/shared/infra/typeorm/migrations/*{.ts,.js}"],
+  "seeds": ["./src/shared/infra/typeorm/seeds/*{.ts,.js}"],
+  "factories": ["./src/shared/infra/typeorm/factories/*{.ts,.js}"],
+  "cli": {
+    "migrationsDir": "./src/shared/infra/typeorm/migrations"
+  }
+}
