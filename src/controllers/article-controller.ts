@@ -38,7 +38,7 @@ class CreateArticleController {
   }
 
   async listAll(req: Request, res: Response): Promise<Response> {
-    const { skip = 10, take = 1000 } = req.query
+    const { skip = 0, take = 1000 } = req.query
 
     const listAllArticleUseCase = container.resolve(ListAllArticleUseCase)
     const articles = await listAllArticleUseCase.execute(Number(skip), Number(take))

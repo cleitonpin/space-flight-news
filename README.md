@@ -37,6 +37,18 @@ npm install
 yarn
 ```
 
+Executar migrations:
+
+```bash
+npm run typeorm migration:run
+```
+
+*ou*
+
+```bash
+yarn typeorm migration:run
+```
+
 Para execução em ambiente de desenvolvimento:
 
 ```bash
