@@ -5,6 +5,7 @@
   "username": "postgres",
   "password": "post",
   "database": "coodesh",
+  "dropSchema": true,
   "entities": ["src/modules/**/entities/*.ts"],
   "migrations": ["./src/shared/infra/typeorm/migrations/*{.ts,.js}"],
   "seeds": ["./src/shared/infra/typeorm/seeds/*{.ts,.js}"],
